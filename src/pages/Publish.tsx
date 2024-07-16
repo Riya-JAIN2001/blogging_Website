@@ -1,6 +1,6 @@
 import Appbar from "../component/Appbar"
 import axios  from 'axios';
-import { BackendUrl } from './../../../backend/src/config';
+import { BackendUrl } from '../config';
 import { ChangeEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaImage } from 'react-icons/fa';

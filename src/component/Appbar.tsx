@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import { Avtar } from "./Avtar"
 import { Link } from 'react-router-dom';
-import { BackendUrl } from "../../../backend/src/config";
+import { BackendUrl } from "../config";
 import axios from "axios"
 import { ImWink } from "react-icons/im";
 

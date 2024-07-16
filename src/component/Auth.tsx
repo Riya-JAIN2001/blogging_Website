@@ -2,7 +2,7 @@ import { SignupInput, SigninInput } from "@riyajain2950/medium-blog";
 import axios from "axios";
 import { ChangeEvent, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { BackendUrl } from './../../../backend/src/config';
+import { BackendUrl } from '../config';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

@@ -1,7 +1,7 @@
 import axios from "axios"
 import Appbar from "./Appbar"
 import { Avtar } from "./Avtar"
-import { BackendUrl } from "../../../backend/src/config"
+import { BackendUrl } from "../config"
 import { useNavigate } from "react-router-dom"
 
  
