@@ -51,7 +51,7 @@ export interface Blog{
         alert("Your Post is Deleting");
         try{
           
-        const res= await axios.delete(`${BackendUrl}/api/v1/blog/delete/${blog.id}`,{
+        await axios.delete(`${BackendUrl}/api/v1/blog/delete/${blog.id}`,{
           headers:{Authorization:"Bearer "+localStorage.getItem("token")}
         });}catch(e){
           console.log(e)
