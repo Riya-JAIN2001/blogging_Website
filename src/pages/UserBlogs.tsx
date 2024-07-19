@@ -1,8 +1,8 @@
-import BlogCard from '../component/BlogCard';
+
 import UserblogCard from '../component/UserblogCard';
 import { useUserBlog } from '../hooks/index';
 import Appbar from './../component/Appbar';
-import { useParams } from 'react-router-dom';
+
 
 const UserBlogs = () => {
     

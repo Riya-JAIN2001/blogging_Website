@@ -3,7 +3,7 @@ import axios  from 'axios';
 import { BackendUrl } from '../config';
 import { ChangeEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaImage } from 'react-icons/fa';
+
 
 
 const Publish = () => {
@@ -12,7 +12,7 @@ const Publish = () => {
     const [content, setContent]=useState("");
     const [image, setImage]=useState();
     const[imageUrl, setImageUrl]=useState("")
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    
 
     const navigate= useNavigate()
     ;
