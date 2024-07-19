@@ -60,7 +60,7 @@ const Edit = () => {
    onClick={async()=>{
     
     
-     const res=await axios.patch(`${BackendUrl}/api/v1/blog/${id}`,{
+     await axios.patch(`${BackendUrl}/api/v1/blog/${id}`,{
         title,
         content,
         id, 
