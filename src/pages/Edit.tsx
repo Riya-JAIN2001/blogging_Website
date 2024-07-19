@@ -41,7 +41,7 @@ const Edit = () => {
          
     }
   return (
-    <div>
+    <div className='bg-[url("https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg")] h-screen w-screen border-none  bg-contain bg-center bg-fixed'>
         <Appbar pr={true}  />
     <div className ="flex justify-center w-full">
     <div className="max-w-screen-lg w-full mt-10">   

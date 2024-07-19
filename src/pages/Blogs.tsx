@@ -6,9 +6,9 @@ const Blogs = () => {
   const {loading, blogs}= useBlog();
   
   if(loading){
-    return <div className=' bg-[url("bg.jpg")]  border-none  h-screen bg-contain bg-center bg-fixed' >
+    return <div className=' bg-[url("https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg")]  border-none  h-screen bg-contain bg-center bg-fixed' >
       <div><Appbar pr={true}/></div>
-      <div className=' mt-20 bg-[url("bg.jpg")]  border-none  h-screen bg-contain bg-center bg-fixed'>
+      <div className=' mt-20 bg-[url("https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg")]  border-none  h-screen bg-contain bg-center bg-fixed'>
         <div className='' >
 <div role="status" className="animate-pulse mt-5">
     <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 max-w-[640px] mb-2.5 mx-auto"></div>
@@ -42,7 +42,7 @@ const Blogs = () => {
    return (
     <>
     <div><Appbar pr={true} /></div>
-    <div className='bg-[url("bg.jpg")]  border-none  bg-contain bg-center bg-fixed flex justify-center'>
+    <div className='bg-[url("https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg")]  border-none  bg-contain bg-center bg-fixed flex justify-center'>
        
     <div className='  max-w-xl'>
       {blogs?.map((b)=>(

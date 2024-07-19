@@ -11,9 +11,9 @@ export const Blog = ( ) => {
   
   if(loading){
     return (
-      <div className=' bg-[url("bg.jpg")] border-none  h-screen bg-contain bg-center bg-fixed '>
+      <div className=' bg-[url("https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg")] border-none  h-screen bg-contain bg-center bg-fixed '>
       <div className="bg-white"><Appbar/></div>
-      <div className='flex justify-center bg-[url("bg.jpg")] border-none  h-screen bg-contain bg-center bg-fixed'>
+      <div className='flex justify-center bg-[url("https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg")] border-none  h-screen bg-contain bg-center bg-fixed'>
         <div className="mt-20" >
 
         <div role="status" className="w-screen p-4 space-y-4  divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">

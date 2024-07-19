@@ -37,9 +37,9 @@ const Publish = () => {
          
     }
   return (
-    <div>
+    <div className='bg-[url("https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg")] w-screen h-screen border-none  bg-contain bg-center bg-fixed'>
         <Appbar pr={true}  />
-    <div className ="flex justify-center w-full">
+    <div className =" bg-[url('https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg')]  border-none  bg-contain bg-center bg-fixed flex justify-center w-full">
     <div className="max-w-screen-lg w-full mt-10">   
 <textarea id="message"  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " placeholder="Title" onChange={(e)=>setTitle(e.target.value)}></textarea>
 
@@ -81,7 +81,7 @@ const Publish = () => {
        Publish post
    </button>
    <div>
-    {imageUrl==""? <div> No image uploaded </div> : <img  className="w-96 h-96"src={imageUrl} alt ="sorrt"/>}
+    {imageUrl==""? <div className="text-gray-300 text-3xl font-semibold font-serif"> No image uploaded </div> : <img  className="w-96 h-96"src={imageUrl} alt ="sorrt"/>}
    </div>
  
 </div>

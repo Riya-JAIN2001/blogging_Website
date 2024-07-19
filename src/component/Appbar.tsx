@@ -30,7 +30,7 @@ const Appbar = ({pr}:{pr?:boolean}) => {
         </Link>
         {pr===true ? <Link to={`/userblogs`}>
           <div className="mt-1 bg-white">{name!=""?<Avtar size="small" name={name}/>:<div className="mx-2"><ImWink /></div>}
-          <Link to={"/signin"} className="underline text-xs  text-gray-500 font-thin"><div onClick={()=>{localStorage.clear()}}>{name?"Logout":"Register"}</div></Link>
+          <Link to={"/signin"} className="underline text-xs  text-gray-500 font-thin"><div onClick={()=>{localStorage.clear()}}>{name?"Logout":"Register/Login"}</div></Link>
           </div></Link>:<div className="mt-1">{name!=""?<Avtar size="small" name={name}/>:<ImWink />}
 
           </div>}

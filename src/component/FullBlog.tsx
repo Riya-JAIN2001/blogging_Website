@@ -21,7 +21,7 @@ export interface Blog{
    return (
     <div>
       <Appbar pr={true}/>
-    <div className='flex justify-center bg-[url("bg.jpg")]  bg-contain bg-center bg-fixed'>
+    <div className='flex justify-center bg-[url("https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg")]  bg-contain bg-center bg-fixed'>
      <div className="grid lg:grid-cols-12 px-24 w-full  grid-cols-1   pt-20 max-w-screen-2xl">
      <div className="lg:col-span-8">
         <div className="text-3xl font-extrabold  text-gray-400">
@@ -73,7 +73,7 @@ export interface Blog{
      </div>
      </div>
      </div>
-     <div className='item-center  justify-center bg-[url("bg.jpg")] h-screen bg-contain bg-center bg-fixed flex '>
+     <div className='item-center  justify-center bg-[url("https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg")] h-screen bg-contain bg-center bg-fixed flex '>
       {blog.Image!=""?  <div className=""><img src={blog.Image} alt="" className="w-100 h-80 " /></div>:""}
       </div>
      </div>

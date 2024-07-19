@@ -11,7 +11,7 @@ export const SingleUser = ( ) => {
 
   if(loading){
     return (
-      <div className='bg-[url("bg.jpg")] border-none  h-screen bg-contain bg-center bg-fixed'>
+      <div className='bg-[url("https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg")] border-none  h-screen bg-contain bg-center bg-fixed'>
       <div><Appbar/></div>
       <div className='mt-20 flex justify-center'>
         <div >
