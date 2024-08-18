@@ -1,15 +1,38 @@
+// import Quets from './../component/Quets';
+// import Auth from './../component/Auth';
+
+// const Signin = () => {
+//   return (
+//     <div className='grid grid-cols-1 lg:grid-cols-2 h-screen'>
+//       <div className="flex justify-center items-center bg-gray-100">
+//         <Auth type="signin" />
+//       </div>
+//       <div className="hidden lg:flex justify-center items-center bg-gray-300">
+//         <Quets />
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Signin;
+
+
+
 import Quets from './../component/Quets';
 import Auth from './../component/Auth';
 
 const Signin = () => {
   return (
-    <div className=' bg-[url("https://res.cloudinary.com/bloggingwebsite/image/upload/v1721374530/bg_rtvnsm.jpg")] grid grid-cols-1  bg-cover bg-center bg-fixed   lg:grid-cols-2'>
-            <div><Auth type={"signin"}/></div>
-         <div className="hidden lg:block"
-         ><Quets/></div>
-    
-        </div>
+    <div className='grid grid-cols-1 lg:grid-cols-2 h-screen'>
+      <div className=''>
+        <Auth type={"signin"} />
+      </div>
+      <div className='hidden lg:flex items-center justify-center bg-gray-300'>
+        <Quets />
+      </div>
+    </div>
   )
 }
 
-export default Signin
+export default Signin;
+
