@@ -1,58 +1,10 @@
-// import { Avtar } from "./Avtar"
-// import { Link } from 'react-router-dom';
-
-// interface blogCardProps{
-//     authorname:string,
-//     title:string,
-//     content:string,
-//     publishedAt:string, 
-//     id:string, 
-//     Image:string,
-// }
-
-// const UserblogCard = ({id,authorname,title,
-//     content,
-//     publishedAt, Image}:blogCardProps) => {
-//   return (
-    
-//     <Link to={"/usersblog/"+id}>
-//     <div className='border-b p-4 bg-black border-slate-400 pb-2 w-screen max-w-screen-md cursor-pointer '>
-//     <div className="flex">
-//         <div className="flex justify-center flex-col "><Avtar name={authorname} size="small"/>  </div>
-//             <div className="font-extralight pl-2 text-md text-slate-400" >{authorname}</div>
-//             <div className=" mx-1 mt-4"><Circle/></div>
-//             <div className="pl-2 mt-1 text-gray-400 font-thin text-sm">{publishedAt.slice(0,10)}</div>
-//             </div>
-       
-//         <div className="text-xl font-semibold text-slate-400">{title}</div>
-        
-//         <div className="font-normal text-md text-slate-400">{content.slice(0,100)+"..."}</div>
-
-//         <div className="text-slate-400 font-normal text-sm">{Math.ceil((content.length)/100)+"minute(s) read"}</div>
-      
-//         {/* <div className="h-1 w-full bg-slate-200"></div> */}
-//         {Image!=""? <div className='flex justify-center'><img src={Image} alt="" className="max-h-64" /></div>:""}
-//     </div>
-    
-//     </Link>
-//   )
-// }
-// function Circle(){
-//   return (
-//     <div className="size-1 bg-black rounded-full">
-
-//     </div>
-//   )
-// }
-
-// export default UserblogCard
 
 
 
 import { Avtar } from "./Avtar";
 import { Link } from 'react-router-dom';
 
-interface BlogCardProps {
+interface blogCardProps {
   authorname: string;
   title: string;
   content: string;
@@ -61,32 +13,26 @@ interface BlogCardProps {
   Image: string;
 }
 
-const UserblogCard = ({ id, authorname, title, content, publishedAt, Image }: BlogCardProps) => {
+const UserblogCard = ({ id, authorname, title, content, publishedAt, Image }: blogCardProps) => {
   return (
-    <Link to={`/usersblog/${id}`}>
-      <div className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer transition-transform transform hover:scale-105">
-        <div className="relative">
-          {Image && (
-            <img src={Image} alt={title} className="w-full h-48 object-cover" />
-          )}
-          <div className="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full p-4">
-            <div className="flex items-center space-x-3 text-white">
-              <Avtar name={authorname} size="small" />
-              <div className="text-sm">{authorname}</div>
-            </div>
-            <div className="text-xs text-gray-300 mt-1">{publishedAt.slice(0, 10)}</div>
-          </div>
+    <Link to={"/usersblog/" + id}>
+      <div className='border border-gray-300 p-6 w-full max-w-screen-xl md:max-w-screen-2xl lg:max-w-screen-3xl cursor-pointer bg-white shadow-md hover:shadow-lg transition-shadow duration-300 rounded-md mb-6 mx-auto'>
+        <div className="flex items-center mb-4">
+          <Avtar name={authorname} size="small" />
+          <div className="ml-2 text-sm text-amber-600 font-light">{authorname.toUpperCase()}</div>
+          <div className="ml-2 text-amber-600 text-xs">{new Date(publishedAt).toLocaleDateString()}</div>
         </div>
-        <div className="p-6">
-          <h2 className="text-xl font-semibold mb-2 text-gray-800">{title}</h2>
-          <p className="text-gray-600 mb-4">{content.slice(0, 150)}...</p>
-          <div className="text-gray-500 text-sm">
-            {Math.ceil(content.length / 100)} minute(s) read
+        <div className="text-2xl font-semibold text-amber-600 mb-2">{title}</div>
+        <div className="font-normal text-lg text-black mb-2">{content.slice(0, 150) + "..."}</div>
+        <div className="text-black font-normal text-sm mb-4">{Math.ceil(content.length / 100) + " minute(s) read"}</div>
+        {Image && (
+          <div className='flex justify-center mt-4'>
+            <img src={Image} alt={title} className="w-full h-auto max-h-80 object-cover rounded-md" />
           </div>
-        </div>
+        )}
       </div>
     </Link>
   );
-};
+}
 
 export default UserblogCard;

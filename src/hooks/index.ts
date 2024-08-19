@@ -16,7 +16,7 @@ export const useUserBlog=()=>{
     useEffect(()=>{
         axios.get(`${BackendUrl}/api/v1/blog/bulk/userblog`,{
             headers:{
-                Authorization:"Bearer "+localStorage.getItem("token")
+                Authorization:"Bearer "+ localStorage.getItem("token")
         } }   
         ).then(response=>{
             setUserBlog(response.data.blogs);
