@@ -70,7 +70,7 @@ const Edit = () => {
                         <div>
                             <input
                                 type="text"
-                                className="w-full p-4 mb-6 text-gray-900 bg-gray-100 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                                className="w-full p-4 mb-6 text-gray-900 bg-amber-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
                                 placeholder="Title"
                                 value={title}
                                 onChange={(e) => setTitle(e.target.value)}
@@ -120,7 +120,7 @@ interface TextEditorProps {
 function TextEditor({ onChange, content }: TextEditorProps) {
     return (
         <div className="mb-4">
-            <div className="w-full border border-gray-200 rounded-lg bg-gray-50">
+            <div className="w-full border border-gray-200 rounded-lg bg-gray-100">
                 <div className="flex items-center justify-between px-3 py-2 border-b border-gray-200">
                     <div className="flex space-x-1">
                         <button type="button" className="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">

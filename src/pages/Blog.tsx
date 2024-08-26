@@ -66,7 +66,7 @@ export const Blog = ( ) => {
     <>
     {/* <Appbar/> */}
       
-    <div  >
+    <div  className="bg-white">
       {blog&&(<FullBlog blog={blog} user={false}/>)}
       
       </div>

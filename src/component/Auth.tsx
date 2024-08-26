@@ -40,7 +40,7 @@ function Auth({ type }: { type: "signin" | "signup" }) {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
+    <div className="flex justify-center items-center h-screen bg-amber-50">
       <div className="lg:w-96 w-full px-6 py-8 bg-white shadow-lg rounded-lg">
         <div>
           <h1 className="text-3xl font-medium text-gray-800">
@@ -89,7 +89,7 @@ function Auth({ type }: { type: "signin" | "signup" }) {
         </div>
 
         <div className="mt-6">
-          <button onClick={buttonHandler} type="button" className="text-white w-full bg-gradient-to-br bg-gray-600 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
+          <button onClick={buttonHandler} type="button" className="text-white w-full bg-gradient-to-br bg-amber-600 hover:bg-amber-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
             {type === "signin" ? "Sign In" : "Sign Up"}
           </button>
           <ToastContainer />

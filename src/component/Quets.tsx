@@ -16,11 +16,11 @@
 
 const Quets = () => {
   return (
-    <div className="flex justify-center flex-col h-screen p-12 bg-gray-300">
-      <p className="text-center text-4xl font-medium text-gray-600">
+    <div className="flex justify-center flex-col h-screen p-12 bg-amber-100">
+      <p className="text-center text-4xl font-medium text-amber-600">
         There are no secrets to success. It is the result of preparation, hard work, and learning from failure.
       </p>
-      <p className="text-right text-gray-600 mt-10">- Colin Powell, former Secretary of State</p>
+      <p className="text-right text-amber-600 mt-10">- Colin Powell, former Secretary of State</p>
     </div>
   )
 }

@@ -34,7 +34,7 @@ const FullBlog = ({ blog, user }: { blog: Blog; user: Boolean }) => {
             </div>
             <div className="pt-4 text-black">{blog.content}</div>
           </div>
-          <div className="lg:col-span-4 mt-8 lg:mt-0">
+          <div className="lg:col-span-4 mt-8 mx-6 lg:mt-0">
             <div className="text-amber-600 text-lg">Author</div>
             <div className="flex w-full mt-2">
               <div className="pr-4 flex flex-col justify-center">
@@ -71,14 +71,14 @@ const FullBlog = ({ blog, user }: { blog: Blog; user: Boolean }) => {
                     alert("Post has been deleted");
                     navigate("/userblogs");
                   }}
-                  className="text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-3 py-2 mr-2 mb-2"
+                  className="text-white bg-amber-800 hover:bg-amber-700 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-3 py-2 mr-2 mb-2"
                 >
                   Delete
                 </button>
                 <button
                   type="button"
                   onClick={() => navigate(`/edit/${blog.id}`)}
-                  className="text-white w-28 bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-3 py-2 mr-2 mb-2"
+                  className="text-white w-28 bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-3 py-2 mr-2 mb-2"
                 >
                   Edit
                 </button>
